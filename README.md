@@ -164,8 +164,7 @@ we have in our `index` action:
 ```ruby
 def index
   birds = Bird.all
-  # render json: birds
-  render json: birds, only: [:id, :name, :species]
+  render json: birds
 end
 ```
 
